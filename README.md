@@ -22,5 +22,17 @@ fetch(addParams(params, url), {
     method: 'GET'
 })
 
+// url argument is optional, it just prepends the formatted parameters to the end of the url.
+
+fetch(`${url}${addParams({
+    auth: 'bearer',
+    token: '12345',
+    username: 'ynautwobbuffet',
+    password: '42069'
+})}`, {
+    method: 'GET'
+})
+
+
 ```
 
