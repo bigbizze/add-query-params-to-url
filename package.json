@@ -1,6 +1,6 @@
 {
   "name": "add-query-params-to-url",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "lightweight utility for adding formatted query parameters to get request url.",
   "main": "index.js",
   "repository": "https://github.com/bigbizze/add-query-params-to-url",

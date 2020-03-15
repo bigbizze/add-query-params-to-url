@@ -32,7 +32,14 @@ fetch(`${url}${addParams({
 })}`, {
     method: 'GET'
 })
+```
 
+If you'd prefer to just copy the code instead 
+of installing this it's just this:
 
+```
+exports.addParams = function (params, url) {
+    return url + "?" + Object.entries(params).map(function (x) { return (x[0] + "=" + encodeURIComponent(x[1])); }).join("&");
+};
 ```
 
