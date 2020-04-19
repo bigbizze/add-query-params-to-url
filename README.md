@@ -1,5 +1,11 @@
 # add-query-params-to-url
 
+```yarn add add-query-params-to-url```
+
+
+
+```npm i add-query-params-to-url -S```
+
 Lightweight ( < 1kb) helper to add query parameters to a url GET request.
 
 usage:
