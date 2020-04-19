@@ -10,7 +10,9 @@ module.exports = {
                 test: /\.tsx?$/,
                 use: [
                     {
-                        loader: "ts-loader"
+                        loader: "ts-loader",
+                        options: {
+                        }
                     }
                 ],
                 exclude: /node_modules/,
@@ -22,11 +24,13 @@ module.exports = {
         minimize: true
     },
     resolve: {
-        extensions: [ 'ts'],
+        extensions: [ '.ts', '.js'],
     },
     output: {
         filename: "index.js",
         path: __dirname,
+        libraryTarget: 'umd',
+        library: 'MyLib',
+        umdNamedDefine: true
     },
-
 };
