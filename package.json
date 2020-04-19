@@ -1,14 +1,28 @@
 {
   "name": "add-query-params-to-url",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "lightweight utility for adding formatted query parameters to get request url.",
   "main": "index.js",
   "repository": "https://github.com/bigbizze/add-query-params-to-url",
   "author": "bigbizze",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "webpack": "webpack --config ./webpack.config.js"
+  },
+  "files": [
+    "index.js",
+    "package.json",
+    "README.md",
+    "index.d.ts"
+  ],
   "devDependencies": {
     "@types/node": "^13.9.1",
-    "node": "^13.10.1"
+    "node": "^13.10.1",
+    "ts-loader": "^7.0.0",
+    "typescript": "^3.8.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
